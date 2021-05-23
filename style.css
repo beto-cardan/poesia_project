@@ -60,7 +60,7 @@ header nav ul li a:hover,
 header nav ul  li a.active
 {
     color:#fff;
-    background: #2196f3;
+    background:rgba(199, 7, 125, 0.24) ;
 }
 .menu-toggle{
     color:#fff;
