@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    background: url(media/pexels-thought-catalog-904616.jpg);
+    background-size: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+}
+header .logo{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 24px;
+    float: left;
+    font-weight: lighter;
+    font-family: 'Parisienne', cursive;
+    font-size: 30px;
+
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 16px;
+
+
+}
+header nav ul li a:hover,
+header nav ul  li a.active
+{
+    color:#fff;
+    background: #2196f3;
+}
+.menu-toggle{
+    color:#fff;
+    float:right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+main{
+   
+    margin: 10%;
+    background-color: rgba(199, 7, 125, 0.24);
+    border-color: 6px 3px rgba(0, 0, 0, 0.438);
+    border-radius: 20px;
+    min-height: calc(500vh - 56px);
+    padding: 20px;
+}
+h1{
+    font-family: 'Parisienne', cursive;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h2{
+    font-family: 'Parisienne', cursive;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+}
+p{
+    font-family: 'Bad Script', cursive;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background:rgba(0, 0, 0, 0.486);
+    color: rgb(22, 22, 22);
+    padding: 0.25rem;
+    
+}
+footer ul li{
+  display: inline;
+  flex-direction: row;
+  width: 30%;
+  justify-content: center;
+  align-items: flex-start;
+  
+
+}
+.icon ul li {
+    float: left;
+    width: 20%;
+    font-size: 15px;
+    color:#fff;
+    list-style: none;
+    text-align: center;
+
+}
+.icon ul li:hover{
+  background: rgba(93, 91, 91, 0.548);
+
+  
+} 
+
+
+
+@media(max-width: 991px){
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header nav{
+        position: absolute;
+        width: 50%;
+        height: calc(100vh -50px );
+        background: #333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+
+    }
+    header nav.active{
+        left: 0;
+    }
+    
+    header nav ul{
+        display: block;
+        text-align: center;
+
+    }
+    header nav ul li  a{
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    
+}
+@media(max-width: 500px){
+    main{
+        padding: 0 20px;
+        margin-top: 20%;
+    }
+    p{
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
