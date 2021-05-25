@@ -77,8 +77,8 @@ header nav ul  li a.active
 }
 
 main{
-    margin: 10% 25%;
-    background-color: rgba(199, 7, 125, 0.24);
+    margin: 5% 25%;
+    background-color: rgba(238, 28, 185, 0.308);
     border-color: 6px 3px rgba(0, 0, 0, 0.438);
     border-radius: 20px;
     min-height: calc(200vh - 56px);
@@ -144,13 +144,10 @@ footer ul li{
  
 } 
 
-
-/* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
   }
   
-  /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
     position: fixed;
@@ -166,25 +163,21 @@ footer ul li{
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
   .next {
-    right: 10%;
+    right: 5%;
     border-radius: 3px 0 0 3px;
   }
   .prev{
-    left: 10%;
+    left: 5%;
     border-radius: 3px 0 0 3px;
 
   }
 
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+    .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
 
   
-  /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -196,9 +189,7 @@ footer ul li{
     display: none;
     
   }
-  
-  
-  /* Fading animation */
+   
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -207,12 +198,12 @@ footer ul li{
   }
   
   @-webkit-keyframes fade {
-    from {opacity: .4}
+    from {opacity: .2}
     to {opacity: 1}
   }
   
   @keyframes fade {
-    from {opacity: .4}
+    from {opacity: .2}
     to {opacity: 1}
   }
 @media(max-width: 991px){
@@ -248,15 +239,15 @@ footer ul li{
 }
 @media(max-width: 500px){
     main{
-       margin: 20% 25%;
+       margin: 15% 25%;
        padding: 20px;
        width: auto;
     }
     h1{
-      font-size: 30px;
+      font-size: 20px;
     }
     h2{
-      font-size:20px ;
+      font-size:16px ;
       text-align: center;
     } 
 
