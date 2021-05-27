@@ -81,53 +81,56 @@ header nav ul  li a.active
 
 
 main{
-    margin: 5% 25%;
-    background-color: rgba(192, 18, 149, 0.411);
-    box-shadow: 6px 3px 6px rgba(0, 0, 0, 0.075);
-    border-radius: 20px;
-    max-height: calc(300vh - 56px);
-    padding: 20px;
-    width: 50%;
-    align-self: center;
-    
+   background-color: rgba(192, 18, 149, 0.246);
+   box-shadow: 6px 3px 6px rgba(0, 0, 0, 0.075);
+   border-radius: 20px;
+   max-height: calc(300vh - 56px);
+   padding: 100px;
+   width: auto;
+   left: 0; 
 }
 
+
 iframe{
-  width:100%;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 5%;
-  padding: 0.75rem;
-  z-index: -1;
+   width:100%;
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   border-radius: 5%;
+   padding: 0.75rem;
+   z-index: -1;
 }
 
 
 h1{
-    font-family: 'Parisienne', cursive;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    text-align: center;
+   font-family: 'Parisienne', cursive;
+   font-size: 30px;
+   color: rgb(255, 255, 255);
+   text-align: center;
 }
 h2{
-    font-family: 'Parisienne', cursive;
-    color:rgba(255, 255, 255, 0.904);
-    font-size: 25px;
-    text-align: center;
-    padding: 0.25rem;
-    letter-spacing: 0.1rem;
-    font: lighter;
+   font-family: 'Parisienne', cursive;
+   color:rgba(255, 255, 255, 0.904);
+   font-size: 25px;
+   text-align: center;
+   padding: 0.25rem;
+   letter-spacing: 0.1rem;
+   font: italic lighter;
+   border: solid rgba(211, 211, 211, 0.034);
+   border-radius: 20px;
 }
+    
+
 hr{
   box-shadow: 9px 6px rgba(0, 0, 0, 0.13);
 }
 p{
-    font-family: 'Bad Script', cursive;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
+   font-family: 'Bad Script', cursive;
+   font-size: 20px;
+   color: #fff;
+   text-align: center;
 }
 
 footer{
@@ -227,6 +230,32 @@ footer ul li{
    from {opacity: .2}
    to {opacity: 1}
   }
+
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 40px;
+   margin-top: 5%;
+   background-color: rgba(10, 10, 10, 0.233);
+   letter-spacing: 0.1rem;
+    
+  }
+  
+.column {
+   flex:100%;
+   max-width: 30%;
+   margin-left: 10%;
+  }
+  
+.column img {
+   margin-top: 8px;
+   vertical-align: middle;
+   width: 100%;
+   border-radius: 50%;
+  }
+  
+
 @media(max-width: 991px){
     header{
        padding: 0 20px;
@@ -260,62 +289,26 @@ footer ul li{
     header nav ul li  a{
        border-bottom: 1px solid rgba(0,0,0,.2);
     }
-    main{
-       margin: 8% 25%;
-       padding: 20px;
-       width: 50%;
+    .column {
+      flex: 50%;
+      max-width: 50%;
     }
+   
     
 }
-@media(max-width: 500px){
-    main{
-       margin: 15% 25%;
-       padding: 20px;
-       width: auto;
-    }
-    h1{
-       font-size: 20px;
-    }
-    h2{
-       font-size:16px ;
-       text-align: center;
-    }
 
-}
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 100px;
-  
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex:50%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+  h1{
+    font-size: 20px;
+ }
+  h2{
+    font-size:16px ;
+    text-align: center;
   }
 }
 
