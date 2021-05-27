@@ -211,7 +211,7 @@ footer ul li{
     }
     .menu-toggle:active{
        transform: rotate(360deg);
-       transition: 0.4s;
+       transition: 0.5s;
        color: #262626;
     }
     .prev{
