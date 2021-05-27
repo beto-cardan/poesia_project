@@ -310,6 +310,11 @@ footer ul li{
     font-size:16px ;
     text-align: center;
   }
+  .column img {
+    width: 50%;
+    margin-top: 15%;
+    
+   }
 }
 
 
