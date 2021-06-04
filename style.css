@@ -127,6 +127,7 @@ h2{
 
 hr{
   box-shadow: 9px 6px rgba(0, 0, 0, 0.13);
+  width: auto;
 }
 p{
    font-family: 'Bad Script', cursive;
@@ -212,7 +213,6 @@ footer ul li{
 }
 .mySlides{
    display: none;
-    
 }
    
 .fade {
