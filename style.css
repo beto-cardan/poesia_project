@@ -87,7 +87,7 @@ main{
    max-height: calc(300vh - 56px);
    padding: 100px;
    width: auto;
-   left: 0; 
+   left: 0;
 }
 
 
@@ -173,6 +173,7 @@ footer ul li{
 
 .slideshow-container {
    max-width: 1000px;
+   
 }
   
 .prev, .next {
@@ -213,6 +214,7 @@ footer ul li{
 }
 .mySlides{
    display: none;
+   
 }
    
 .fade {
@@ -296,7 +298,6 @@ footer ul li{
       max-width: 50%;
     }
    
-    
 }
 
 
